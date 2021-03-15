@@ -2,6 +2,9 @@ function addTask() {
   const btn = document.querySelector('button');
   btn.addEventListener('click', function () {
     const inputText = document.querySelector('input').value;
+    if (inputText.length === 0) {
+      return alert("Insira uma tarefa no campo texto, antes de pressionar o botão 'Adicionar'!");
+    }
     const task = document.createElement('li');
     task.className = 'task';
     task.innerText = inputText;
