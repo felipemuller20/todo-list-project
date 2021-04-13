@@ -160,3 +160,15 @@ function deleteCompleteBtn() {
   });
 }
 deleteCompleteBtn();
+
+// function saveTasksLocal() {
+//   const criarTarefa = document.getElementById('criar-tarefa');
+//   criarTarefa.addEventListener('click', function() {
+//     const lista = document.getElementById('lista-tarefas');
+//     const tasks = lista.children;
+//     for (let index = 0; index < tasks.length; index += 1) {
+//       localStorage.setItem(index, tasks[index]);
+//     }
+//   })
+// }
+// saveTasksLocal();
